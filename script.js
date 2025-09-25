@@ -44,7 +44,7 @@ function DrawChart(invested, profit, labels){
                 {
                     label: 'Amount Invested',
                     data: invested,
-                    backgroundColor: 'blue'
+                    backgroundColor: 'black'
                 },
                 {
                     label: 'Profit (Interest)',
