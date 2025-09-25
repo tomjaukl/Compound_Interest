@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    font-family: 'Parkinsans', serif;
+}
+header{
+    text-align: center;
+    margin-bottom: 50px;
+    height: 50px;
+    border-bottom: solid 2px black;
+    width: 100%;
+}
+#mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 100px);
+    background-color: lightgray;
+}
+#calculatorContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px black;
+    min-width: 25rem;
+    padding: 10px 0 10px 0;
+}
+#calculatorContainer label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 90%;
+}
+#calculatorContainer input{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 90%;
+}
+#calculate-button{
+    padding: 8px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid black;
+}
+#calculate-button:hover{
+    background-color: black;
+    color: white;
+}
+#resultContainer{
+    margin-left: 20px;
+    background-color: blue;
+}
+#resultContainer canvas{
+    height: 25rem;
+}
+@media (max-width: 1225px){
+    #mainContainer{
+        flex-direction: column; 
+    }
+    #resultContainer{
+        margin-top: 20px;
+        margin-left: 0;
+        max-width: 1125px;
+        min-width: 500px;
+    width: 100%;
+    }
+    #calculatorContainer{
+        max-width: 30rem;
+    }
+}
